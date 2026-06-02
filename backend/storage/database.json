@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "b91_everton",
+      "password": "123456",
+      "codigoRepresentanteSap": "B91/Q09",
+      "nome": "Everton Gonçalves",
+      "perfil": "VENDEDOR",
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "login": "admin",
+      "password": "admin123",
+      "codigoRepresentanteSap": null,
+      "nome": "Admin",
+      "perfil": "ADMIN",
+      "ativo": true
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "codigoSap": "C0001",
+      "razaoSocial": "Distribuidora ABC Ltda",
+      "cnpj": "12.345.678/0001-90",
+      "vendedorId": 1,
+      "tabelaPrecoId": 1,
+      "ativo": true
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "codigoSap": "SKU001",
+      "descricao": "Produto A",
+      "unidade": "UN",
+      "estoqueAtual": 120,
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "codigoSap": "SKU002",
+      "descricao": "Produto B",
+      "unidade": "UN",
+      "estoqueAtual": 80,
+      "ativo": true
+    }
+  ],
+  "priceTables": [
+    {
+      "id": 1,
+      "nome": "Tabela Sul",
+      "vigenciaFim": "2026-12-31",
+      "ativa": true
+    }
+  ],
+  "priceTableItems": [
+    {
+      "tabelaPrecoId": 1,
+      "produtoId": 1,
+      "precoBase": 48,
+      "descontoMaxPct": 10
+    },
+    {
+      "tabelaPrecoId": 1,
+      "produtoId": 2,
+      "precoBase": 135,
+      "descontoMaxPct": 10
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "numeroInterno": "00241",
+      "clienteId": 1,
+      "vendedorId": 1,
+      "codigoRepresentanteSap": "B91/Q09",
+      "tabelaPrecoId": 1,
+      "status": "PENDENTE_TXT",
+      "condicaoPagamento": "30/60/90 dias",
+      "dataEntrega": "2026-06-15",
+      "valorTotal": 5844,
+      "itens": [
+        {
+          "produtoId": 1,
+          "quantidade": 50,
+          "precoTabela": 48,
+          "precoUnitario": 45.6,
+          "descontoPct": 5,
+          "valorTotal": 2280
+        },
+        {
+          "produtoId": 2,
+          "quantidade": 30,
+          "precoTabela": 135,
+          "precoUnitario": 118.8,
+          "descontoPct": 12,
+          "valorTotal": 3564
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "numeroInterno": "00242",
+      "numeroSap": null,
+      "clienteId": 1,
+      "vendedorId": 1,
+      "codigoRepresentanteSap": "B91/Q09",
+      "tabelaPrecoId": 1,
+      "status": "PENDENTE_TXT",
+      "condicaoPagamento": "30/60/90 dias",
+      "dataEntrega": "2026-06-20",
+      "valorTotal": 480,
+      "erroMensagem": null,
+      "itens": [
+        {
+          "produtoId": 1,
+          "quantidade": 10,
+          "precoTabela": 48,
+          "precoUnitario": 48,
+          "descontoPct": 0,
+          "valorTotal": 480
+        }
+      ],
+      "criadoEm": "2026-05-28T15:43:59.762Z",
+      "atualizadoEm": "2026-05-28T15:43:59.771Z"
+    }
+  ],
+  "integrationLogs": []
+}

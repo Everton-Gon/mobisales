@@ -1,0 +1,1 @@
+00241|ERRO||Erro de limite de credito excedido no SAP
